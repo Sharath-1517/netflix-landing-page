@@ -3,7 +3,7 @@
     font-size: 10px;
   }
   html body {
-    background-size: 100% 42vh;
+    background-size: 100% 40vh;
   }
   html body .container {
     width: 95%;
@@ -34,6 +34,9 @@
   }
   html body .hero--membership {
     width: 90%;
+  }
+  html body .hero--membership__error {
+    top: 90%;
   }
   html body .hero--membership div {
     background-color: wheat;

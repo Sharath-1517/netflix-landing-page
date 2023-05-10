@@ -6,7 +6,7 @@ html {
         font-size: 10px;
         
         body {
-            background-size: 100% 42vh;
+            background-size: 100% 40vh;
 
             .container {
                 width: 95%;
@@ -49,6 +49,10 @@ html {
 
                 &--membership {
                     width: 90%;
+
+                    &__error {
+                        top: 90%;
+                    }
 
                     div{
                         background-color: wheat;
