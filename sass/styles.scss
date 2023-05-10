@@ -140,7 +140,7 @@ body {
             position: relative;
             font-size: 1.2rem;
             padding: .7em 1em;
-            width: max(25rem, 100%);
+            width: min(25rem, 100%);
             border-radius: 5px;
             color: #ffffff;
             border: 1px solid #808080;
@@ -197,7 +197,6 @@ body {
             margin: 0 auto;
             width: 80%;
             color: #ffffff;
-
             border-bottom: 1px solid #808080;
 
             div {
@@ -220,7 +219,6 @@ body {
             }
 
             &:nth-child(2) {
-                // padding: 0 15px;
                 div {
                     order: 2;
                 }

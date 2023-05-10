@@ -62,11 +62,17 @@ html {
 
             .feature {
 
+                margin-top: 0;
                 margin: -150px auto 0 auto;
 
                 &s {
+
                     &__content {
                         flex-direction: column;
+                        
+                        img {
+                            margin-top: -20px;
+                        }
 
                         div {
                             margin: 35px 0;
@@ -86,6 +92,32 @@ html {
                         }
 
                     }
+                }
+
+            }
+
+            .faq {
+                margin-top: 150px;
+                max-width: 95%;
+            }
+
+            .footer {
+
+                max-width: 90%;
+                margin: 35px 0;
+
+                h4 {
+                    margin-bottom: 25px;
+                }
+
+                &--links {
+                    grid-template-columns: 1fr;
+                    margin-bottom: 15px;
+
+                    h4 {
+                        margin-bottom: inherit;
+                    }
+
                 }
 
             }
