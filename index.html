@@ -32,10 +32,11 @@
             </div>
             <form class="hero--membership" onsubmit="doNothing()">
                 <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
-                <!-- <label for="emailLabel" class="label" id="inputLabel" onclick="showLabel()">Enter your email</label> -->
-                <input type="text" name="email" class="hero--membership__input" id="emailInput" onfocus="showLabel()" onblur="hideLabel()" placeholder="Enter your email">
-                <p class="hero--membership__error" id="input_error">Enter a proper email address!</p>
-                <button class="hero--membership__btn" type="button" onclick="verifyEmail()">Get Started ></button>
+                <div>
+                    <input type="text" name="email" class="hero--membership__input" id="emailInput" onfocus="showLabel()" onblur="hideLabel()" placeholder="Enter your email">
+                    <p class="hero--membership__error" id="input_error">Enter a proper email address!</p>
+                    <button class="hero--membership__btn" type="button" onclick="verifyEmail()">Get Started ></button>
+                </div>
             </form>
         </div>
         <div class="container feature">

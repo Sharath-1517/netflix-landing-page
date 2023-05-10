@@ -1,6 +1,6 @@
-@media (width <= 500px) {
+@media (width <= 850px) {
   html {
-    font-size: 10px;
+    font-size: 12px;
   }
   html body {
     background-size: 100% 40vh;
@@ -39,7 +39,8 @@
     top: 90%;
   }
   html body .hero--membership div {
-    background-color: wheat;
+    align-items: start;
+    flex-direction: column;
   }
   html body .hero--membership__btn {
     margin: 15px 0 0 0;
@@ -71,8 +72,8 @@
     max-width: 95%;
   }
   html body .footer {
-    max-width: 90%;
-    margin: 35px 0;
+    margin: 35px auto;
+    max-width: 95%;
   }
   html body .footer h4 {
     margin-bottom: 25px;
@@ -85,17 +86,15 @@
     margin-bottom: inherit;
   }
 }
-@media (width < 900px) and (width > 450px) {
+@media (width > 750px) and (width < 1300px) {
   html {
-    font-size: 12px;
+    font-size: 13px;
   }
-  html .hero {
-    height: 70vh;
+  html body {
+    background-size: 100% 105vh;
   }
-}
-@media (width < 1250) and (width > 900px) {
-  html .hero {
-    padding-left: 30em;
+  html body .feature .features__content img {
+    max-width: 60%;
   }
 }
 

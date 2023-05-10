@@ -1,9 +1,9 @@
 html {
 
     // Mobile =====================================================================================================================================
-    @media (width <= 500px) {
+    @media (width <= 850px) {
 
-        font-size: 10px;
+        font-size: 12px;
         
         body {
             background-size: 100% 40vh;
@@ -55,7 +55,8 @@ html {
                     }
 
                     div{
-                        background-color: wheat;
+                        align-items: start;
+                        flex-direction: column;
                     }
 
                     &__btn {
@@ -107,8 +108,8 @@ html {
 
             .footer {
 
-                max-width: 90%;
-                margin: 35px 0;
+                margin: 35px auto;
+                max-width: 95%;
 
                 h4 {
                     margin-bottom: 25px;
@@ -121,33 +122,39 @@ html {
                     h4 {
                         margin-bottom: inherit;
                     }
-
                 }
-
             }
         }
     }
 
-    // =======================================================================================================================================
+// Tablet to any view
 
-    // Tablet
-    
-    @media (width < 900px) and (width > 450px){
-        
-        font-size: 12px;
-        
-        .hero {
-            height: 70vh;
+    @media (width > 750px) and (width < 1300px){
+
+        font-size: 13px;
+
+        body {
+            background-size: 100% 105vh;
+
+            .feature {
+
+                .features {
+
+                    &__content {
+
+                        img {
+                            max-width: 60%;
+                        }
+
+                    }
+
+                }
+
+            }
+
         }
         
     }
-    
-    @media (width < 1250) and (width > 900px) {
-        .hero {
-            padding-left: 30em;
-        }
-    }
 
-    // =======================================================================================================================================
 
 }
