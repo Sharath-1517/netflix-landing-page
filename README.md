@@ -1,1 +1,1 @@
-# [live](https://sharath-1517.github.io/netflix-landing-page/)
+# [live](https://sharath-netflix.netlify.app/)
