@@ -1,17 +1,14 @@
 html {
 
-    // Mobile =====================================================================================================================================
-    @media (width <= 850px) {
+    // Mobile
+    @media (width < 850px) {
 
-        font-size: 12px;
-        
+        font-size: 12px;    
         body {
-            background-size: 100% 40vh;
-
+            background-size: 100% 53vh;
             .container {
                 width: 95%;
             } 
-
             .header {
                 padding: 0 1em;
                 .navbar {
@@ -28,37 +25,28 @@ html {
 
             .hero {
                 height: 65vh;
-                margin-top: 60px;
-                
-                h1 {
-                    line-height: 100%;
-                    font-size: 3rem;
-                    font-weight: 700;
+                margin-top: 60px; 
+                &--content {
+                    h1 {
+                        line-height: 100%;
+                        font-size: 3rem;
+                        font-weight: 700;
+                    }
                 }
-
                 h2 {
                     margin-top: 10px;
                     font-weight: 400;
                     font-size: 1.6rem;
                 }
-
-                .label {
-                    top: 12%;
-                    padding-left: 5px;
-                }
-
                 &--membership {
                     width: 90%;
-
                     &__error {
                         top: 90%;
                     }
-
                     div{
                         align-items: start;
                         flex-direction: column;
                     }
-
                     &__btn {
                         margin: 15px 0 0 0;
                     }
@@ -66,59 +54,45 @@ html {
             }
 
             .feature {
-
-                margin-top: 0;
-                margin: -150px auto 0 auto;
-
+                margin: -80px auto 0 auto;
                 &s {
-
                     &__content {
                         flex-direction: column;
                         
                         img {
                             margin-top: -20px;
                         }
-
                         div {
                             margin: 35px 0;
                         }
-
                         &:nth-child(2) {
                             padding: 0;
                             img {
                                 order: 2;
                             }
                         }
-
                         &:nth-child(4) {
                             img {
                                 order: 2;
                             }
                         }
-
                     }
                 }
-
             }
 
             .faq {
                 margin-top: 150px;
                 max-width: 95%;
             }
-
             .footer {
-
                 margin: 35px auto;
                 max-width: 95%;
-
                 h4 {
                     margin-bottom: 25px;
                 }
-
                 &--links {
                     grid-template-columns: 1fr;
                     margin-bottom: 15px;
-
                     h4 {
                         margin-bottom: inherit;
                     }
@@ -129,32 +103,37 @@ html {
 
 // Tablet to any view
 
-    @media (width > 750px) and (width < 1300px){
-
-        font-size: 13px;
-
+    @media (width > 850px){
+        font-size: 16px;
         body {
-            background-size: 100% 105vh;
-
             .feature {
-
                 .features {
-
                     &__content {
-
                         img {
                             max-width: 60%;
                         }
-
                     }
-
                 }
-
             }
-
         }
-        
     }
 
+    @media (width < 370px) {
+        body{
+            .feature {
+                margin-top: 0px;
+            }
+        }
+    }
 
+    // Just to adjust the fonts a bit better
+
+    @media (width < 1440px) and (width > 850px) {
+        .hero--content {
+            h1 {
+                font-size: 3.9rem;
+                line-height: 75px;
+            }
+        }
+    }
 }
