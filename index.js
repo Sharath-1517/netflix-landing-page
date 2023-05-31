@@ -5,18 +5,14 @@ const input_err = document.getElementById('input_error');
 
 
 function showLabel() {
-
     label.classList.add('labelactive');
     input.focus();
-
 }
 
 function hideLabel() {
-
     if(input.value === '') {
         label.classList.remove('labelactive');
     }
-    
 }
 
 function verifyEmail(){
@@ -25,23 +21,37 @@ function verifyEmail(){
     const regex = res.test(String(input.value).toLowerCase());
     console.log(regex);
     if(!regex){
-        input_err.classList.add('erroractive');
+        input_err.classList.add('membership__error_active');
     }else {
-        input_err.classList.remove('erroractive');
+        input_err.classList.remove('membership__error_active');
     };
 }
 
-function doNothing() {
+function doNothing(event) {
     event.preventDefault();
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-    const accordionHeaders = document.querySelectorAll(".accordion__header");
-    const span = document.getElementById("accordion_span");
-
+document.addEventListener('DOMContentLoaded', function() {
+    var accordionHeaders = document.querySelectorAll('.accordion__header');
+  
     accordionHeaders.forEach(function(header) {
-      header.addEventListener("click", function() {
-        this.parentElement.classList.toggle("active");
+      header.addEventListener('click', function() {
+        var accordionContent = this.nextElementSibling;
+        var img = this.querySelector('.img');
+        var isActive = this.classList.contains('active');
+  
+        // Toggle active class
+        this.classList.toggle('active');
+  
+        // Toggle content visibility
+        if (isActive) {
+          accordionContent.classList.remove("accordion__content_active");
+          img.classList.remove('img_active');
+        } else {
+            accordionContent.classList.add("accordion__content_active");
+            img.classList.add('img_active');
+        }
       });
     });
-  }); 
+  });
+  
