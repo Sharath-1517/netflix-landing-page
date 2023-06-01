@@ -11,6 +11,9 @@
   html body .membership h3 {
     font-size: min(1.5rem, 3.5vmin);
   }
+  html body .membership__error {
+    top: 60%;
+  }
   html body .membership div {
     display: grid;
   }
@@ -127,8 +130,7 @@ button {
 .membership__error {
   display: none;
   position: absolute;
-  top: 82%;
-  left: 3%;
+  top: 83%;
   color: #E50914;
 }
 .membership__error_active {
