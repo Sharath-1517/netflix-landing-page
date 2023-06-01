@@ -22,7 +22,7 @@ body {
     background: linear-gradient(to bottom, #080e1dbd, #080e1dd3, #080e1dd3, #080e1dd3, #080e1dd3, #080e1dd3, #080e1dd9, #080e1de7, #080e1df6, #080e1dea, #080e1d), url('/images/mainIMG.png');
     background-color: $body-bg;
     background-repeat:no-repeat;
-    background-size: 100% 105vh;
+    background-size: 100% 106vh;
     color: #ffffff;
 }
 
@@ -194,7 +194,7 @@ main {
                 }
 
                 img {
-                    width: 50%
+                    width: 55%
                 }
 
                 &:nth-child(2), &:nth-child(4) {
@@ -280,7 +280,7 @@ main {
             background-color: transparent;
             border: none;
             padding: 0;
-            margin: 25px auto 10em auto;
+            margin-top: 25px;
         }
     }
 }

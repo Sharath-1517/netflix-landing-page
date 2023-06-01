@@ -1,17 +1,79 @@
 html {
 
-    // Mobile
-    @media (width < 850px) {
-
-    }
-
 // Tablet to any view
 
     @media (width > 850px){
-
+        
     }
 
-    @media (width < 370px) {
+    @media (width < 500px) {
+        font-size: 10px;
+        body {
+            background-size: 100% 50vh;
+            .container {
+                width: 90%;
+            }
+            .membership {
+                h3 {
+                    font-size: min(1.5rem, 3.5vmin);
+                }
+                div {
+                    display: grid;
+                    input {
+                        width: 100%;
+                        font-size: 3vmin;
+                    }
+                    button {
+                        width: 45%;
+                        font-size: 3vmin;
+                    }
+                }
+            }
+            header {
+                img {
+                    width: 25vmin;
+                }
+            }
+            .hero {
+                width: 90%;
+                h1 {
+                    font-weight: 700;
+                    font-size: 6.5vmin;
+                }
+                h2 {
+                    font-size: min(2.3rem, 4vmin);
+                }
+            }
+            .feature {
+                .feature {
+                    &__content {
+                        display: grid;
+                        h2 {
+                            font-size: min(3rem, 6vmin);
+                        }
+                        h3 {
+                            font-size: min(auto, 3vmin);
+                        }
+                        img {
+                            width: 100%;
+                        }
+                        &:nth-child(2), &:nth-child(4) {
+                            div {
+                                order: 1;
+                            }
+                        }
+                    }
+                }
+            }
 
+            .footer {
+                .creator {
+                    left: 30%;
+                }
+                &--links {
+                    grid-template-columns: 1fr;
+                }
+            }
+        }
     }
 }

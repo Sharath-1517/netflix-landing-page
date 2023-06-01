@@ -1,3 +1,63 @@
+@media (width < 500px) {
+  html {
+    font-size: 10px;
+  }
+  html body {
+    background-size: 100% 50vh;
+  }
+  html body .container {
+    width: 90%;
+  }
+  html body .membership h3 {
+    font-size: min(1.5rem, 3.5vmin);
+  }
+  html body .membership div {
+    display: grid;
+  }
+  html body .membership div input {
+    width: 100%;
+    font-size: 3vmin;
+  }
+  html body .membership div button {
+    width: 45%;
+    font-size: 3vmin;
+  }
+  html body header img {
+    width: 25vmin;
+  }
+  html body .hero {
+    width: 90%;
+  }
+  html body .hero h1 {
+    font-weight: 700;
+    font-size: 6.5vmin;
+  }
+  html body .hero h2 {
+    font-size: min(2.3rem, 4vmin);
+  }
+  html body .feature .feature__content {
+    display: grid;
+  }
+  html body .feature .feature__content h2 {
+    font-size: min(3rem, 6vmin);
+  }
+  html body .feature .feature__content h3 {
+    font-size: min(auto, 3vmin);
+  }
+  html body .feature .feature__content img {
+    width: 100%;
+  }
+  html body .feature .feature__content:nth-child(2) div, html body .feature .feature__content:nth-child(4) div {
+    order: 1;
+  }
+  html body .footer .creator {
+    left: 30%;
+  }
+  html body .footer--links {
+    grid-template-columns: 1fr;
+  }
+}
+
 *, *::after, *::before {
   box-sizing: border-box;
   margin: 0;
@@ -13,7 +73,7 @@ body {
   background: linear-gradient(to bottom, rgba(8, 14, 29, 0.7411764706), rgba(8, 14, 29, 0.8274509804), rgba(8, 14, 29, 0.8274509804), rgba(8, 14, 29, 0.8274509804), rgba(8, 14, 29, 0.8274509804), rgba(8, 14, 29, 0.8274509804), rgba(8, 14, 29, 0.8509803922), rgba(8, 14, 29, 0.9058823529), rgba(8, 14, 29, 0.9647058824), rgba(8, 14, 29, 0.9176470588), #080e1d), url("/images/mainIMG.png");
   background-color: #080E1D;
   background-repeat: no-repeat;
-  background-size: 100% 105vh;
+  background-size: 100% 106vh;
   color: #ffffff;
 }
 
@@ -157,7 +217,7 @@ main .features .feature__content h3 {
   font-weight: 500;
 }
 main .features .feature__content img {
-  width: 50%;
+  width: 55%;
 }
 main .features .feature__content:nth-child(2) div, main .features .feature__content:nth-child(4) div {
   order: 2;
@@ -223,7 +283,7 @@ main .faq__membership {
   background-color: transparent;
   border: none;
   padding: 0;
-  margin: 25px auto 10em auto;
+  margin-top: 25px;
 }
 
 .footer {
