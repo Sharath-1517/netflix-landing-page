@@ -50,9 +50,6 @@
   html body .feature .feature__content:nth-child(2) div, html body .feature .feature__content:nth-child(4) div {
     order: 1;
   }
-  html body .footer .creator {
-    left: 30%;
-  }
   html body .footer--links {
     grid-template-columns: 1fr;
   }
@@ -288,7 +285,7 @@ main .faq__membership {
 
 .footer {
   position: relative;
-  padding-bottom: 100px;
+  padding-bottom: 25px;
 }
 .footer div {
   display: grid;
@@ -303,9 +300,9 @@ main .faq__membership {
   font-weight: 300;
 }
 .footer .creator {
-  position: absolute;
-  left: 50%;
-  top: 90%;
+  margin: 50px auto 25px auto;
+  width: 100%;
+  text-align: center;
 }
 .footer .creator a {
   color: #ffffff;

@@ -289,7 +289,7 @@ main {
 .footer {
 
     position: relative;
-    padding-bottom: 100px;
+    padding-bottom: 25px;
 
     div {
         display: grid;
@@ -306,10 +306,9 @@ main {
     }
 
     .creator {
-
-        position: absolute;
-        left: 50%;
-        top: 90%;
+        margin: 50px auto 25px auto;
+        width: 100%;
+        text-align: center;
         a {
             color: #ffffff;
         }
