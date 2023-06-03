@@ -96,11 +96,14 @@ html {
                 .accordion {
                     &__header{
                         h4 {
-                            font-size: min(1.3rem, 6vmin);
+                            font-size: min(1.5rem, 6vmin);
                         }
                         img {
                             display: none;
                         }
+                    }
+                    &__content {
+                        font-size: min(1.5rem, 6vmin);
                     }
                 }
             }

@@ -73,10 +73,13 @@
 }
 @media (width < 300px) {
   html body .faq .accordion__header h4 {
-    font-size: min(1.3rem, 6vmin);
+    font-size: min(1.5rem, 6vmin);
   }
   html body .faq .accordion__header img {
     display: none;
+  }
+  html body .faq .accordion__content {
+    font-size: min(1.5rem, 6vmin);
   }
 }
 
