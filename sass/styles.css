@@ -1,6 +1,6 @@
-@media (width < 500px) {
+@media (width <= 1000px) {
   html {
-    font-size: 10px;
+    font-size: 12px;
   }
   html body {
     background-size: 100% 51vh;
@@ -8,25 +8,36 @@
   html body .container {
     width: 90%;
   }
+  html body .membership {
+    padding: min(4%, 2.5em);
+  }
   html body .membership h3 {
-    font-size: min(1.5rem, 3.5vmin);
+    font-size: min(2rem, 3.5vmin);
   }
   html body .membership__error {
     top: 60%;
+    font-size: min(2.5rem, 2vmin);
   }
   html body .membership div {
     display: grid;
+    gap: 30px;
   }
   html body .membership div input {
-    width: 100%;
-    font-size: 3vmin;
+    width: min(100%, 500px);
+    font-size: min(2.5rem, 2vmin);
   }
   html body .membership div button {
-    width: 45%;
-    font-size: 3vmin;
+    width: min(45%, 220px);
+    font-size: 2.5vmin;
   }
   html body header img {
     width: 25vmin;
+  }
+  html body header .navbar--options__lang {
+    font-size: min(1rem, 3vmin);
+  }
+  html body header .navbar--options__btn {
+    font-size: min(1.3rem, 3vmin);
   }
   html body .hero {
     width: 90%;
@@ -42,10 +53,10 @@
     display: grid;
   }
   html body .feature .feature__content h2 {
-    font-size: min(3rem, 6vmin);
+    font-size: min(2.5rem, 6vmin);
   }
   html body .feature .feature__content h3 {
-    font-size: min(auto, 3vmin);
+    font-size: min(2rem, 4vmin);
   }
   html body .feature .feature__content img {
     width: 100%;
@@ -53,8 +64,19 @@
   html body .feature .feature__content:nth-child(2) div, html body .feature .feature__content:nth-child(4) div {
     order: 1;
   }
+  html body .faq h2 {
+    font-size: min(2.7rem, 7vmin);
+  }
   html body .footer--links {
     grid-template-columns: 1fr;
+  }
+}
+@media (width < 300px) {
+  html body .faq .accordion__header h4 {
+    font-size: min(1.3rem, 6vmin);
+  }
+  html body .faq .accordion__header img {
+    display: none;
   }
 }
 
